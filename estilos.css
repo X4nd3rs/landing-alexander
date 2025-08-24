@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #333;
+  line-height: 1.6;
+  background: #f5f7fa;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER */
+.header {
+  background-color: #14799e;
+  color: #fff;
+}
+
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav .titulo {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.nav .lista {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+.nav .lista .item {
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.nav .lista .item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* MAIN */
+.main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Seccion de bienvenida */
+.section1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section1 .titulo2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.section1 .parrafo {
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.section1 .boton {
+  padding: 10px 20px;
+  border: none;
+  background-color: #14799e;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.section1 .boton:hover {
+  background-color: #0d4f66;
+}
+
+.section2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.main .section2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.section2 .hab {
+  background: #fff;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.section2 .hab:hover {
+  transform: translateY(-5px);
+}
+
+.section2 .titulo3 {
+  margin-bottom: 10px;
+  color: #14799e;
+}
+
+/* FOOTER */
+.footer {
+  background: #14799e;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+  }
+
+  .section2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section1 .hab {
+    width: 90%;
+  }
+}
